@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tunisian-blue: #0E5A9C;
+  --color-dark-navy: #083B66;
+  --color-med-blue: #2D8FE3;
+  --color-pure-white: #FFFFFF;
+  --color-soft-white: #F8FAFC;
+  --color-dark-slate: #1E293B;
+  
+  --font-playfair: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-pure-white text-dark-slate font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
