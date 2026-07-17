@@ -29,7 +29,8 @@ const Location = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl text-dark-slate mb-1">Opening Hours</h4>
-                  <p className="text-gray-600">Monday – Saturday: 10:00 AM – 5:00 PM, Sunday: Closed</p>
+                  <p className="text-gray-600">Monday – Saturday: 10:00 AM – 5:00 PM</p>
+                  <p className="text-gray-600">Sunday: Closed</p>
                 </div>
               </div>
 
@@ -39,7 +40,7 @@ const Location = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl text-dark-slate mb-1">Call Us</h4>
-                  <p className="text-gray-600">+44 7527 843447</p>
+                  <a href="tel:+447527843447" className="text-gray-600 hover:text-tunisian-blue transition-colors">+44 7527 843447</a>
                 </div>
               </div>
 
@@ -55,13 +56,13 @@ const Location = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-tunisian-blue text-white px-8 py-4 rounded-full font-extrabold flex items-center justify-center space-x-2 hover:bg-dark-navy transition-all">
+              <a href="https://maps.google.com/?q=Unit+411+Row+F+Hall+1981+Kirkgate+Market+Leeds+LS2+7JJ" target="_blank" rel="noopener noreferrer" className="bg-tunisian-blue text-white px-8 py-4 rounded-full font-extrabold flex items-center justify-center space-x-2 hover:bg-dark-navy transition-all">
                 <Navigation className="w-5 h-5" />
                 <span>Get Directions</span>
-              </button>
-              <button className="bg-pure-white text-dark-slate border-2 border-dark-slate/10 px-8 py-4 rounded-full font-extrabold hover:bg-dark-slate hover:text-white transition-all">
+              </a>
+              <a href="tel:+447527843447" className="bg-pure-white text-dark-slate border-2 border-dark-slate/10 px-8 py-4 rounded-full font-extrabold hover:bg-dark-slate hover:text-white transition-all inline-block text-center">
                 Call Now
-              </button>
+              </a>
             </div>
           </div>
 

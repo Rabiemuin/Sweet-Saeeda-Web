@@ -34,31 +34,12 @@ const Hero = () => {
                 <span>View The Menu</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="#location" className="bg-pure-white text-dark-slate border-2 border-dark-slate/10 px-8 py-4 rounded-full font-extrabold text-lg hover:bg-dark-slate hover:text-white transition-all flex items-center justify-center space-x-2">
+              <a href="#location" className="bg-soft-white text-dark-slate border-2 border-gray-200 px-8 py-4 rounded-full font-extrabold text-lg hover:bg-dark-navy hover:text-white transition-all flex items-center justify-center space-x-2">
                 <MapPin className="w-5 h-5" />
                 <span>Find Us Today</span>
               </a>
             </div>
 
-            {/* Trust Bar */}
-            <div className="mt-12 flex items-center space-x-6">
-              <div className="flex -space-x-3">
-                {[1,2,3,4].map(i => (
-                  <div key={i} className="w-12 h-12 rounded-full border-4 border-pure-white bg-gray-200 overflow-hidden">
-                    <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="Customer" />
-                  </div>
-                ))}
-                <div className="w-12 h-12 rounded-full border-4 border-pure-white bg-tunisian-blue text-white flex items-center justify-center text-xs font-bold">
-                  5k+
-                </div>
-              </div>
-              <div>
-                <div className="flex text-yellow-500">
-                  {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
-                </div>
-                <p className="text-sm font-bold text-dark-slate">5-Star Google Reviews</p>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div 

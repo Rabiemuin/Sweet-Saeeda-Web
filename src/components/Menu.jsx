@@ -69,9 +69,6 @@ const Menu = () => {
                 <p className="text-sm text-gray-500 leading-relaxed">
                   {dish.description}
                 </p>
-                <button className="mt-6 w-full py-3 rounded-2xl bg-tunisian-blue text-white font-bold hover:bg-dark-navy transition-colors duration-300">
-                  Order Now
-                </button>
               </div>
             </motion.div>
           ))}

@@ -67,6 +67,14 @@ const Reviews = () => {
             </motion.div>
           ))}
         </div>
+        
+        <div className="text-center mt-16">
+          <a href="mailto:sweet.saeeda.ltd@gmail.com?subject=Review%20for%20Sweet%20Saeeda" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-tunisian-blue text-white px-8 py-4 rounded-full font-extrabold text-lg shadow-xl shadow-tunisian-blue/20 hover:bg-dark-navy transition-all">
+            <Star className="w-5 h-5 fill-current" />
+            <span>Leave a Review</span>
+          </a>
+          <p className="text-gray-500 text-sm mt-4">Your feedback helps us serve you better!</p>
+        </div>
       </div>
     </section>
   )
