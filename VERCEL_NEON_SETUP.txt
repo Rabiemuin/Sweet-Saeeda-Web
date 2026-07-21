@@ -1,0 +1,29 @@
+SWEET SAEEDA — VERCEL + NEON SETUP
+
+Upload these items to the ROOT of your GitHub repository:
+1. api/ratings.js
+2. vercel.json
+3. The updated src/components/Hero.jsx from cto.new
+4. package.json and package-lock.json from cto.new
+
+Do NOT upload:
+- node_modules
+- dist
+- .env or .env.local
+
+Then add the Neon connection string in Vercel:
+1. Open Vercel and select sweet-saeeda-web.
+2. Go to Settings > Environment Variables.
+3. Add a variable named DATABASE_URL.
+4. Paste your Neon PostgreSQL connection string as its value.
+5. Enable it for Production, Preview, and Development.
+6. Save it.
+7. Go to Deployments and redeploy the latest deployment.
+
+Test after deployment:
+- Open https://sweetsaeeda.com/api/ratings
+- It should display JSON similar to: {"total":1,"average":5}
+- Then open the homepage, submit a rating, and refresh in another browser/device.
+
+Security:
+Never put DATABASE_URL inside GitHub or any frontend file.
